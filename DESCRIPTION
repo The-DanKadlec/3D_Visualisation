@@ -1,0 +1,25 @@
+Package: 3DvisGRF
+Type: Package
+Title: Interactive and Static Visualisation of Ground Reaction Force Vectors
+Version: 0.1.0
+Authors@R: 
+    person("Daniel", "Kadlec", email = "d.kadlec@ecu.edu.edu", role = c("aut", "cre")),
+    person("Shayne", "Vial", email = "s.vial@ecu.edu..edu", role = "aut")
+Description: Provides an R/Shiny interface and core functions to load GRF time-series, compute resultants, render interactive 3D, static 3D, and 2D plots, and export animated GIFs.
+License: CC0-1.0
+Encoding: UTF-8
+LazyData: true
+Imports:
+    shiny,
+    rgl,
+    plot3D,
+    ggplot2,
+    dplyr,
+    tidyr,
+    magick
+Suggests:
+    testthat,
+    shinytest2,
+    roxygen2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
