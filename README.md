@@ -25,8 +25,8 @@ R -e "devtools::install_local('.')"
 
 ```r
 # Launch the Shiny app from R
-library(grfVisual)
-runApp(system.file('app', package = 'grfVisual'))
+library(3D_vis)
+runApp(system.file('app', package = '3D_vis'))
 ```
 
 ### From command line
