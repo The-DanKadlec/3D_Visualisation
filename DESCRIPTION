@@ -1,4 +1,4 @@
-Package: 3DvisGRF
+Package: shinyForce3D
 Type: Package
 Title: Interactive and Static Visualisation of Ground Reaction Force Vectors
 Version: 0.1.0
