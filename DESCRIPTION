@@ -3,7 +3,7 @@ Type: Package
 Title: Interactive and Static Visualisation of Ground Reaction Force Vectors
 Version: 0.1.0
 Authors@R: 
-    person("Daniel", "Kadlec", email = "d.kadlec@ecu.edu.edu", role = c("aut", "cre")),
+    person("Daniel", "Kadlec", email = "d.kadlec@ecu.edu.edu", role = c("aut", "cre"))
     person("Shayne", "Vial", email = "s.vial@ecu.edu.edu", role = "aut")
 Description: A Shiny app for dynamic and static visualization of 3D ground reaction forces using interactive force vector plots.
 License: MIT
