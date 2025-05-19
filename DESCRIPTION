@@ -5,21 +5,24 @@ Version: 0.1.0
 Authors@R: 
 person("Daniel", "Kadlec", email = "d.kadlec@ecu.edu.edu", role = c("aut", "cre"))
     person("Shayne", "Vial", email = "s.vial@ecu.edu..edu", role = "aut")
-Description: Provides an R/Shiny interface and core functions to load GRF time-series, compute resultants, render interactive 3D, static 3D, and 2D plots, and export animated GIFs.
-License: CC0-1.0
+Description: A Shiny app for dynamic and static visualization of 3D ground reaction forces using interactive force vector plots.
+License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
 Imports:
     shiny,
     rgl,
-    plot3D,
     ggplot2,
     dplyr,
     tidyr,
-    magick
-Suggests:
-    testthat,
-    shinytest2,
-    roxygen2
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+    readr,
+    magick,
+    grid,
+    stringr,
+    shinyjs,
+    shinyWidgets,
+    webshot2,
+    plot3D,
+    patchwork
