@@ -14,8 +14,8 @@ This repository contains an R/Shiny application and supporting R package for vis
 
 ```bash
 # Clone the repository
-git clone https://github.com/The-DanKadlec/3D_Visualisation.git
-cd 3D_Visualisation
+git clone https://github.com/The-DanKadlec/shinyForce3D
+cd shinyForce3D
 
 # Install as an R package
 R -e "devtools::install_local('.')"
