@@ -25,14 +25,14 @@ R -e "devtools::install_local('.')"
 
 ```r
 # Launch the Shiny app from R
-library(3D_vis)
-runApp(system.file('app', package = '3D_vis'))
+library(shinyForce3D)
+runApp(system.file('app', package = 'shinyForce3D'))
 ```
 
 ### From command line
 
 ```bash
-Rscript -e "grfVisual::runApp()"
+Rscript -e "shinyForce3D::runApp()"
 ```
 
 ## Example Data
