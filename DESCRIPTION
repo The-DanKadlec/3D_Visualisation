@@ -1,29 +1,32 @@
-usethis::use_description(fields = list(
-  Package = "shinyForce3D",
-  Title = "Interactive and Static Visualisation of Ground Reaction Force Vectors",
-  Description = "A Shiny app for dynamic and static visualization of 3D ground reaction forces using interactive force vector plots.",
-  Version = "0.1.0",
-  License = "MIT",
-  Encoding = "UTF-8",
-  LazyData = "true",
-  RoxygenNote = "7.2.3",
-  Depends = "R (>= 4.1.0)",
-  Authors@R = 'c(
-    person("Daniel", "Kadlec", email = "d.kadlec@ecu.edu.edu", role = c("aut", "cre")),
-    person("Shayne", "Vial", email = "s.vial@ecu.edu.edu", role = "aut")
-  )'
-))
-usethis::use_package("shiny")
-usethis::use_package("rgl")
-usethis::use_package("ggplot2")
-usethis::use_package("dplyr")
-usethis::use_package("tidyr")
-usethis::use_package("readr")
-usethis::use_package("magick")
-usethis::use_package("grid")
-usethis::use_package("stringr")
-usethis::use_package("shinyjs")
-usethis::use_package("shinyWidgets")
-usethis::use_package("webshot2")
-usethis::use_package("plot3D")
-usethis::use_package("patchwork")
+Package: shinyForce3D
+Type: Package
+Title: Interactive and Static Visualisation of Ground Reaction Force Vectors
+Version: 0.1.0
+Authors@R: c(
+    person("Daniel", "Kadlec",
+           email = "d.kadlec@ecu.edu", role = c("aut", "cre")),
+    person("Shayne", "Vial",
+           email = "s.vial@ecu.edu", role = "aut")
+)
+Description: A Shiny app for dynamic and static visualization of 3D ground reaction
+ forces using interactive force vector plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0)
+Imports:
+    shiny,
+    rgl,
+    ggplot2,
+    dplyr,
+    tidyr,
+    readr,
+    magick,
+    grid,
+    stringr,
+    shinyjs,
+    shinyWidgets,
+    webshot2,
+    plot3D,
+    patchwork
