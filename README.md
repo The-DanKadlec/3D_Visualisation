@@ -60,4 +60,4 @@ This software is released under the [CC0 v1.0 Universal](LICENSE) license—publ
 
 If you use this tool in your research, please cite:
 
-> Kadlec, D., & Vial, S. (2025). *3D_vis: An R/Shiny application for interactive ground reaction force visualisation*. Journal of Open Source Software, X(X), XXX. [https://doi.org/XX.XXXXX/joss.XXXXX](https://doi.org/XX.XXXXX/joss.XXXXX)
+> Kadlec, D., & Vial, S. (2025). *shinyForce3D: A R/Shiny App for 3D Force Vector Visualisation of Ground Reaction Force*. Journal of Open Source Software, X(X), XXX. [https://doi.org/XX.XXXXX/joss.XXXXX](https://doi.org/XX.XXXXX/joss.XXXXX)
