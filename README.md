@@ -1,14 +1,15 @@
-# 3D Visualisation of Ground Reaction Forces (GRF)
+# shinyForce3D: 3D Visualisation of Ground Reaction Forces (GRF)
 
-This repository contains an R/Shiny application and supporting R package for visualising ground reaction force (GRF) vector data in both dynamic interactive 3D, static 3D, and 2D formats. The tool supports single and dual dataset comparisons, customisable sphere/arrow sizing, peak detection, and export of animated GIFs.
+This repository contains an R/Shiny application and supporting R package for visualising ground reaction force (GRF) vector data in dynamic 3D, static 3D, and 2D formats. The tool supports single and dual dataset comparisons, customisable sphere/arrow sizing, peak detection, and export of animated GIFs.
 
 ## Features
 
-* **Interactive 3D**: Real‑time rotation and exploration of GRF vectors as colored spheres or arrows.
-* **GIF Export**: Generate rotating GIF animations with all annotations.
-* **Static 3D**: Publication‑quality snapshots from orthogonal angles, with optional butterfly lines and peak vector highlighting.
-* **2D Time‑Series**: Plot of Fx, Fy, Fz, and resultant forces over stance phase, with mean ± SD ribbons and peak markers and a separate 2D visualisation as polar coordiantes with magnitude (r), inclination (θ), and azimuth (φ).
-* **Pedotti Plot**: Animated and static depicition of two force coordinates (preset as Fy and Fz) as Pedotti plots. 
+- **Interactive 3D**: Real‑time rotation and exploration of GRF vectors as colored spheres or arrows.
+- **GIF Export**: Generate rotating 3D animations with all annotations.
+- **Static 3D**: Publication‑quality snapshots from orthogonal views, with optional butterfly lines and peak vector highlighting.
+- **2D Time-Series (Cartesian)**: Plot Fx, Fy, Fz, and resultant force over stance phase, with mean ± SD ribbons and peak markers.
+- **2D Polar Coordinates**: Visualise magnitude (r), inclination (θ), and azimuth (φ) to distinguish directional vs. magnitude changes.
+- **Pedotti Plot**: Animated or static depiction of two selected GRF components (e.g., Fy vs. Fz), ideal for coordination pattern analysis.
 
 ## Installation
 
@@ -26,13 +27,13 @@ R -e "devtools::install_local('.')"
 ```r
 # Launch the Shiny app from R
 library(shinyForce3D)
-runApp(system.file('app', package = 'shinyForce3D'))
+shinyForce3D::run_app()
 ```
 
 ### From command line
 
 ```bash
-Rscript -e "shinyForce3D::runApp()"
+Rscript -e "shinyForce3D::run_app()"
 ```
 
 ## Example Data
