@@ -55,7 +55,7 @@ Contributions are welcome! Please:
 
 ## License
 
-This software is released under the [CC0 v1.0 Universal](LICENSE) license—public domain dedication.
+This software is released under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 ## Citation
 
