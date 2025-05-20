@@ -1,0 +1,116 @@
+---
+title: "shinyForce3D Workflow: Upload, Visualise, and Export GRF Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{shinyForce3D Workflow: Upload, Visualise, and Export GRF Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(shinyForce3D)
+```
+
+## Overview
+
+This vignette demonstrates the use of the `shinyForce3D` package to visualise 3D ground reaction force (GRF) vectors. The app provides dynamic, static, and two-dimensional visualisation options that support exploration, interpretation, and communication of complex ground reaction force data. The walkthrough covers installation, launching the app, preparing the input file, and understanding the function of each major visualisation panel.
+
+## Installation
+
+To install the package directly from GitHub:
+
+```{r}
+install.packages("devtools")
+devtools::install_github("The-DanKadlec/shinyForce3D")
+```
+
+## Launching the App
+
+To launch the application after installation:
+
+```{r}
+shinyForce3D::run_app()
+```
+
+This opens a browser-based GUI where users can upload files, customise visualisation options, and export results.
+
+## Data Format Requirements
+
+Uploaded files must:
+
+* Be in `.csv` format
+* Contain numeric data only, with no header rows or metadata
+* Include columns arranged in triplets: Fx, Fy, Fz per trial
+* Have the same number of rows per trial (e.g., 101 rows per stance phase)
+
+For multiple trials, columns should be ordered as:
+
+```
+Trial1_Fx, Trial1_Fy, Trial1_Fz, Trial2_Fx, Trial2_Fy, Trial2_Fz, Trial2_Fn, Trial2_Fn, Trial2_Fn,...
+```
+
+The app automatically parses these into separate trials and computes the mean and SD for plotting.
+
+**Note:** Example files are provided in the `data/` folder of the repository for immediate use.
+
+## Visualisation Options
+
+Once your file is uploaded, the app offers five major panels (tabs):
+
+### • Dynamic 3D Plot
+
+Displays the full GRF trajectory in three dimensions as a sequence of colored spheres, with optional vector arrows ("butterfly lines").
+
+* Rotate and zoom interactively.
+* Toggle vector traces and highlight peak resultant vector.
+* Useful for spatial understanding of force orientation and temporal evolution.
+
+### • Static 3D Plot
+
+Renders dual static views (e.g., frontal/sagittal) with 3D projections and optional shadows on anatomical planes.
+
+* Suitable for publication-quality figures.
+* Clear comparison of spatial structure between trials or limbs.
+
+### • 2D Plot (Cartesian)
+
+Visualises time-series curves for Fx, Fy, Fz, and resultant force.
+
+* Choose between trial-wise or mean ± SD plots.
+* Highlight peak forces for specific components.
+* Familiar format for many biomechanics users.
+
+### • 2D Plot (Polar Coordinates)
+
+Transforms Cartesian GRF into:
+
+* **r**: Magnitude
+* **θ**: Inclination (vertical angle)
+* **φ**: Azimuth (horizontal orientation)
+* Reveals directionality and strategy shifts that are not apparent in Fx/Fy/Fz alone.
+
+### • Pedotti Plot
+
+Visualises any two force components (e.g., Fy vs. Fz) as 2D vectors evolving over time.
+
+* View static field or animate through time.
+* Highlights coordination patterns and inter-component dependency.
+
+## Export Options
+
+* **GIFs**: Animated 3D or Pedotti plots can be saved via the "Create GIF" and "Download" buttons.
+* **CSV**: Polar coordinate data for each trial can be exported for further statistical analysis.
+
+## Summary
+
+`shinyForce3D` facilitates an intuitive, interactive approach to understanding ground reaction force vectors. It enhances biomechanical analysis by making the spatiotemporal evolution of kinetic data more transparent, while remaining accessible to both researchers and students.
+
+For more examples and teaching use cases, see the vignettes folder or visit the GitHub repository:
+[https://github.com/The-DanKadlec/shinyForce3D](https://github.com/The-DanKadlec/shinyForce3D)
+
+
+
