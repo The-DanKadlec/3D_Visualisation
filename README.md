@@ -5,10 +5,10 @@ This repository contains an R/Shiny application and supporting R package for vis
 ## Features
 
 * **Interactive 3D**: Real‑time rotation and exploration of GRF vectors as colored spheres or arrows.
-* **Static 3D**: Publication‑quality snapshots from orthogonal angles, with optional butterfly lines and peak vector highlighting.
-* **2D Time‑Series**: Plot of Fx, Fy, Fz, and resultant forces over stance phase, with mean ± SD ribbons, peak markers, and customizable legends.
 * **GIF Export**: Generate rotating GIF animations with all annotations.
-* **Adjustable Parameters**: Slider control for sphere/arrow size multiplier, filter cutoff, and color palette selection.
+* **Static 3D**: Publication‑quality snapshots from orthogonal angles, with optional butterfly lines and peak vector highlighting.
+* **2D Time‑Series**: Plot of Fx, Fy, Fz, and resultant forces over stance phase, with mean ± SD ribbons and peak markers and a separate 2D visualisaiton as polar coordiantes with magnitude (r), inclination (θ), and azimuth (φ).
+* **Pedotti Plot**: Animated and static depicition of two force coordinates (preset as Fy and Fz) as Pedotti plots. 
 
 ## Installation
 
