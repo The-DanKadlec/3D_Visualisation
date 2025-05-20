@@ -61,4 +61,4 @@ This software is released under the [CC BY 4.0](https://creativecommons.org/lice
 
 If you use this tool in your research, please cite:
 
-> Kadlec, D., & Vial, S. (2025). *shinyForce3D: A R/Shiny App for 3D Force Vector Visualisation of Ground Reaction Force*. Journal of Open Source Software, X(X), XXX. [https://doi.org/XX.XXXXX/joss.XXXXX](https://doi.org/XX.XXXXX/joss.XXXXX)
+> Kadlec, D., & Vial, S. (2025). *shinyForce3D: A R/Shiny App for 3D Force Vector Visualisation of Ground Reaction Force*. (https://doi.org/10.5281/zenodo.15470997)
