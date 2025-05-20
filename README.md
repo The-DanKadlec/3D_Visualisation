@@ -1,13 +1,13 @@
 # 3D Visualisation of Ground Reaction Forces (GRF)
 
-This repository contains an R/Shiny application and supporting R package for visualizing ground reaction force (GRF) vector data in both dynamic interactive 3D, static 3D, and 2D formats. The tool supports single and dual dataset comparisons, customizable sphere/arrow sizing, peak detection, and export of animated GIFs.
+This repository contains an R/Shiny application and supporting R package for visualising ground reaction force (GRF) vector data in both dynamic interactive 3D, static 3D, and 2D formats. The tool supports single and dual dataset comparisons, customisable sphere/arrow sizing, peak detection, and export of animated GIFs.
 
 ## Features
 
 * **Interactive 3D**: Real‑time rotation and exploration of GRF vectors as colored spheres or arrows.
 * **GIF Export**: Generate rotating GIF animations with all annotations.
 * **Static 3D**: Publication‑quality snapshots from orthogonal angles, with optional butterfly lines and peak vector highlighting.
-* **2D Time‑Series**: Plot of Fx, Fy, Fz, and resultant forces over stance phase, with mean ± SD ribbons and peak markers and a separate 2D visualisaiton as polar coordiantes with magnitude (r), inclination (θ), and azimuth (φ).
+* **2D Time‑Series**: Plot of Fx, Fy, Fz, and resultant forces over stance phase, with mean ± SD ribbons and peak markers and a separate 2D visualisation as polar coordiantes with magnitude (r), inclination (θ), and azimuth (φ).
 * **Pedotti Plot**: Animated and static depicition of two force coordinates (preset as Fy and Fz) as Pedotti plots. 
 
 ## Installation
