@@ -1200,6 +1200,7 @@ if (!dir.exists("www")) { dir.create("www") }
 
 shinyApp(ui, server)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxx)
 
 #Packages used:
 #Jackson, J. (2017). animation: A Package for Animations in R. R package version 2.10.0
