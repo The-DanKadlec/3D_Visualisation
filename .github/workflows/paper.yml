@@ -1,21 +1,23 @@
-name: 'JOSS paper build'
+# .github/workflows/draft-pdf.yml
+name: Draft PDF
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
-  validate-paper:
+  build-paper:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Validate JOSS paper
-        uses: joss-papers/paper-validate@v1
+      - uses: actions/checkout@v4
+      - name: Build draft PDF
+        uses: openjournals/openjournals-draft-action@master
         with:
-          paper: paper.md
-          bib: paper.bib
+          journal: joss
+          paper-path: paper.md
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper
+          path: paper.pdf
