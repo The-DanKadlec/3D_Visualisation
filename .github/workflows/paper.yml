@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Validate JOSS paper
-        uses: joss-paper/paper-validate@v1
+        uses: joss-papers/paper-validate@v1
         with:
           paper: paper.md
           bib: paper.bib
