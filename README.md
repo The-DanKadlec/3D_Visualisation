@@ -44,14 +44,10 @@ shinyForce3D::run_app()
 Rscript -e "shinyForce3D::run_app()"
 ```
 
-## Example Data
-
-Place your CSV files (Fx, Fy, Fz columns) in the `data/` folder, then use the file upload controls in the app to load and visualize.
-
 ## Documentation
 
 * **Vignettes**: See `vignettes/` for end‑to‑end workflows (single trial, multi‑trial averaging, export GIF).
-* **API Reference**: Generated documentation in `man/` for all core functions (e.g. `computeResultant()`, `plotDynamic3D()`, `exportGif()`).
+* **API Reference**: Auto-generated help pages live in man/ (e.g. ?computeResultant, ?plotDynamic3D, ?exportGif).
 
 ## Contributing
 
