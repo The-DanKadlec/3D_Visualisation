@@ -19,3 +19,5 @@ jobs:
         with:
           paper: paper.md
           bib: paper.bib
+          repository: ${{ github.repository }}
+          branch:     ${{ github.ref_name }}
