@@ -1,0 +1,21 @@
+name: 'JOSS paper build'
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-paper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Validate JOSS paper
+        uses: joss-paper/paper-validate@v1
+        with:
+          paper: paper.md
+          bib: paper.bib
