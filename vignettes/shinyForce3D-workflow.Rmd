@@ -105,6 +105,9 @@ Visualises any two force components (e.g., Fy vs. Fz) as 2D vectors evolving ove
 * **GIFs**: Animated 3D or Pedotti plots can be saved via the "Create GIF" and "Download" buttons.
 * **CSV**: Polar coordinate data for each trial can be exported for further statistical analysis.
 
+## Note 
+You can try `data/single_trial.csv` (10-trial example) or `data/multiple_trials.csv` (single-trial example) from the built-in `data/` folder.
+
 ## Summary
 
 `shinyForce3D` facilitates an intuitive, interactive approach to understanding ground reaction force vectors. It enhances biomechanical analysis by making the spatiotemporal evolution of kinetic data more transparent, while remaining accessible to both researchers and students.
