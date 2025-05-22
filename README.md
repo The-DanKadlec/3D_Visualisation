@@ -13,7 +13,7 @@ This repository contains an R/Shiny application and supporting R package for vis
 
 ## Example data
 
-Two example CSVs live in the `data/` directory:
+There are two seperate example CSVs files in the `data/` directory, one with a single trial and one with multiple (10) trials:
 - `data/single_trial.csv`  
 - `data/multiple_trials.csv`  
 
