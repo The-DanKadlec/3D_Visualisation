@@ -11,6 +11,14 @@ This repository contains an R/Shiny application and supporting R package for vis
 - **2D Polar Coordinates**: Visualise magnitude (r), inclination (θ), and azimuth (φ) to distinguish directional vs. magnitude changes.
 - **Pedotti Plot**: Animated or static depiction of two selected GRF components (e.g., Fy vs. Fz), ideal for coordination pattern analysis.
 
+## Example data
+
+Two example CSVs live in the `data/` directory:
+- `data/single_trial.csv`  
+- `data/multiple_trials.csv`  
+
+Upload these directly via the app’s file‐picker to see how multi-trial and single-trial inputs work.
+
 ## Installation
 
 ```bash
