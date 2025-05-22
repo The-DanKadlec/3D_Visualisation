@@ -9,15 +9,14 @@ on:
 jobs:
   validate-paper:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
       - name: Validate JOSS paper
-        uses: joss-paper/paper-validate@v1
+        uses: joss-papers/paper-validate@v1
         with:
-          paper: paper.md
-          bib: paper.bib
+          paper:      paper.md
+          bib:        paper.bib
           repository: ${{ github.repository }}
           branch:     ${{ github.ref_name }}
