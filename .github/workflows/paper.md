@@ -19,6 +19,9 @@ affiliations:
   - name: Edith Cowan University, School of Medical and Health Sciences
     index: 1
     
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+bibliography: paper.bib
+csl: joss.csl  
 ---
 
 # Summary
