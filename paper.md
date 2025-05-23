@@ -68,8 +68,3 @@ To ensure smooth parsing:
 • Confirm that all rows are complete (no missing data in the middle of triplets).
 
 # References
-Pataky, T. C., Robinson, M. A., & Vanrenterghem, J. (2013). Vector field statistical analysis of kinematic and force trajectories. Journal of Biomechanics, 46(14), 2394–2401. https://doi.org/10.1016/j.jbiomech.2013.07.031
-
-Pedotti, A. (1977). Simple equipment used in clinical practice for evaluation of locomotion. IEEE Transactions on Bio-Medical Engineering, 24(5), 456–461. https://doi.org/10.1109/TBME.1977.326186
-
-Winter, D. A. (2009). Biomechanics and motor control of human movement (4th ed.). John Wiley & Sons.
