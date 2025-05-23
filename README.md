@@ -1,4 +1,4 @@
-# shinyForce3D: 3D Visualisation of Ground Reaction Forces (GRF)
+# shinyForce3D: 3D Visualisation of Ground Reaction Forces
 
 This repository contains an R/Shiny application and supporting R package for visualising ground reaction force (GRF) vector data in dynamic 3D, static 3D, and 2D formats. The tool supports single and dual dataset comparisons, customisable sphere/arrow sizing, peak detection, and export of animated GIFs.
 
