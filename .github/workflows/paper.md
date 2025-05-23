@@ -33,16 +33,14 @@ In addition to its research applications, `shinyForce3D` is designed as a pedago
 
 
 # Statement of Need
-Ground reaction force (GRF) vector analysis is a foundational tool in biomechanics for evaluating execution strategies, mechanical loading, and performance characteristics in sport and rehabilitation contexts [@Winter2009]. Traditionally, GRF data are presented as three independent 2D time-series (Fx, Fy, Fz), which obscures the vectorial nature of force and fails to capture inter-component dependencies [@Pataky2013]. This reductionist representation may hinder interpretation of how force orientation, magnitude, and timing evolve dynamically across the stance phase.
+Ground reaction force vector analysis is a foundational tool in biomechanics for evaluating the cause of human locomotion and to determine human performance characteristics in sport and rehabilitation contexts [@Winter2009]. Traditionally, GRF data are presented as three independent 2D time-series (Fx, Fy, Fz), which obscures the vectorial nature of force and fails to capture inter-component dependencies [@Pataky2013]. This reductionistic representation may hinder interpretation of how force orientation, magnitude, and timing evolve dynamically across the a given time domain. These limitations hinder not only exploratory visualisation and adequately formulating mechanically sound research questions but also clear communication of findings, particularly in interdisciplinary or educational settings.
 
-In contrast, GRF is inherently a vector quantity, defined by magnitude and direction in three-dimensional space, and is best preserved when represented in its native vectorial form. Visualising GRF in three dimensions respects this three-dimensional structure, enabling more accurate depiction of the evolving vector. 
-
-These limitations hinder not only exploratory research but also clear communication of findings, particularly in interdisciplinary or educational settings. By integrating 3D vector trajectories, Pedotti plots, and polar coordinate visualisations, `shinyForce3D` provides users with a richer and more coherent understanding of the emergence of ground reaction force.
+In contrast, GRF is inherently a vector quantity, defined by magnitude and direction in three-dimensional space, and is best preserved when represented in its native vectorial form. Visualising GRF in three dimensions respects this three-dimensional structure, enabling more accurate depiction of the evolving vector. By integrating 3D vector trajectories, Pedotti plots, and polar coordinate visualisations, `shinyForce3D` provides users with a richer and more coherent understanding of the emergence of ground reaction force.
 
 Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offers a responsive, user-friendly interface tailored for biomechanics researchers, sports scientists, and educators. It is particularly well-suited for teaching vector-based reasoning and enhancing student comprehension of force dynamics through immediate, visual feedback.
 
 
-#Features
+# Features
 •	Dynamic 3D Plot
 	This tab provides an interactive three-dimensional rendering of the full GRF vector trajectory across the stance phase. Users can rotate, zoom, and explore the vector evolution in space, with optional overlays such as butterfly lines (vector paths) and peak force indicators. This mode offers a structural depiction of force, crucial for understanding how direction and magnitude co-evolve during movement.
 	
@@ -59,21 +57,16 @@ Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offer
 	This plot maps any two selected GRF components (e.g., Fy vs. Fz) as time-evolving vectors from the origin, creating a continuous 2D vector field over stance [@Pedotti1977]. Animated and static options are available, with time encoded via color progression. Originally developed to visualise neuromotor control strategies, Pedotti plots are valuable for identifying coordination patterns, symmetry, and variability in multidimensional force application.
 	
 	
-#Data Upload
+# Data Upload
 `shinyForce3D` allows users to upload CSV files containing ground reaction force (GRF) data in Cartesian form (Fx, Fy, Fz) for one or multiple trials. Each trial must consist of three consecutive columns representing the force components — in order: Fx, Fy, Fz — without any header rows or additional metadata. Files should contain only numeric data, and all trials must be aligned in time (i.e., each trial must have the same number of rows, corresponding to normalised time or percent stance).
 
 When multiple trials are included, `shinyForce3D` automatically segments the data by triplets of columns and computes the trial-wise mean and standart deviation for visualisation. No specific column names are required, as the app infers structure based on column order.
 
 To ensure smooth parsing:
-	•	Do not include subject IDs, time stamps, or non-numeric rows.
-	•	Ensure the total number of columns is divisible by three.
-	•	Confirm that all rows are complete (no missing data in the middle of triplets).
+• Do not include subject IDs, time stamps, or non-numeric rows.
+• Ensure the total number of columns is divisible by three.
+• Confirm that all rows are complete (no missing data in the middle of triplets).
 
-
-# Installation
-install.packages("devtools")
-devtools::install_github("The-DanKadlec/shinyForce3D")
-shiny::runApp(shinyForce3D::app())
 
 # References
 Pataky, T. C., Robinson, M. A., & Vanrenterghem, J. (2013). Vector field statistical analysis of kinematic and force trajectories. Journal of Biomechanics, 46(14), 2394–2401. https://doi.org/10.1016/j.jbiomech.2013.07.031
