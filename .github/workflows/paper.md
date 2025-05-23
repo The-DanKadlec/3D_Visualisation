@@ -18,14 +18,14 @@ authors:
 affiliations:
   - name: Edith Cowan University, School of Medical and Health Sciences
     index: 1
-    
+
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 bibliography: paper.bib
-csl: joss.csl  
+csl: joss.csl
 ---
 
 # Summary
-`shinyForce3D` is an open-source R Shiny application that enables dynamic, interactive visualisation of three-dimensional ground reaction force (GRF) data using animated force vector trajectories. The app supports real-time rendering of animated 3D vectors, static 3D visualisations with planar projections, two-dimensional time-aligned Pedotti plots of selected vector components, and decomposition of traditional Cartesian components (Fx, Fy, Fz) into polar coordinate representations (magnitude *r*, inclination *θ*, and azimuth *φ*) to aid interpretation.
+`shinyForce3D` is an open-source R Shiny application that enables dynamic, interactive visualisation of three-dimensional ground reaction force data using animated force vector trajectories. The app supports real-time rendering of animated 3D vectors, static 3D visualisations with planar projections, two-dimensional time-aligned Pedotti plots of selected vector components, and decomposition of traditional Cartesian components (Fx, Fy, Fz) into polar coordinate representations (magnitude *r*, inclination *θ*, and azimuth *φ*) to aid interpretation.
 
 Users can upload CSV files with trial-level force data, overlay multiple data sets for comparative analysis (e.g., between-limb, between-day, or between-cohort visualisations), and export publication-quality figures and animations in common formats such as `.csv` and `.gif`.
 
@@ -58,7 +58,7 @@ Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offer
 	
 	
 # Data Upload
-`shinyForce3D` allows users to upload CSV files containing ground reaction force (GRF) data in Cartesian form (Fx, Fy, Fz) for one or multiple trials. Each trial must consist of three consecutive columns representing the force components — in order: Fx, Fy, Fz — without any header rows or additional metadata. Files should contain only numeric data, and all trials must be aligned in time (i.e., each trial must have the same number of rows, corresponding to normalised time or percent stance).
+`shinyForce3D` allows users to upload CSV files containing ground reaction force data in Cartesian form (Fx, Fy, Fz) for one or multiple trials. Each trial must consist of three consecutive columns representing the force components - in order: Fx, Fy, Fz - without any header rows or additional metadata. Files should contain only numeric data, and all trials must be aligned in time (i.e., each trial must have the same number of rows, corresponding to normalised time or percent stance).
 
 When multiple trials are included, `shinyForce3D` automatically segments the data by triplets of columns and computes the trial-wise mean and standart deviation for visualisation. No specific column names are required, as the app infers structure based on column order.
 
@@ -67,10 +67,4 @@ To ensure smooth parsing:
 • Ensure the total number of columns is divisible by three.
 • Confirm that all rows are complete (no missing data in the middle of triplets).
 
-
 # References
-Pataky, T. C., Robinson, M. A., & Vanrenterghem, J. (2013). Vector field statistical analysis of kinematic and force trajectories. Journal of Biomechanics, 46(14), 2394–2401. https://doi.org/10.1016/j.jbiomech.2013.07.031
-
-Pedotti, A. (1977). Simple equipment used in clinical practice for evaluation of locomotion. IEEE Transactions on Bio-Medical Engineering, 24(5), 456–461. https://doi.org/10.1109/TBME.1977.326186
-
-Winter, D. A. (2009). Biomechanics and motor control of human movement (4th ed.). John Wiley & Sons.
