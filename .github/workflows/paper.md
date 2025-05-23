@@ -30,7 +30,7 @@ In addition to its research applications, `shinyForce3D` is designed as a pedago
 
 
 # Statement of Need
-Ground reaction force (GRF) vector analysis is a foundational tool in biomechanics for evaluating execution strategies, mechanical loading, and performance characteristics in sport and rehabilitation contexts [@Winter2009]. Traditionally, GRF data are presented as three independent 2D time-series (Fx, Fy, Fz), which obscures the vectorial nature of force and fails to capture inter-component dependencies [@Pataky2013]. This reductionist representation may hinder interpretation of how force orientation, magnitude, and timing evolve dynamically across the stance phase.
+Ground reaction force (GRF) vector analysis is a foundational tool in biomechanics for evaluating execution strategies, mechanical loading, and performance characteristics in sport and rehabilitation contexts [@Winter_2009]. Traditionally, GRF data are presented as three independent 2D time-series (Fx, Fy, Fz), which obscures the vectorial nature of force and fails to capture inter-component dependencies [@Pataky_2013]. This reductionist representation may hinder interpretation of how force orientation, magnitude, and timing evolve dynamically across the stance phase.
 
 In contrast, GRF is inherently a vector quantity, defined by magnitude and direction in three-dimensional space, and is best preserved when represented in its native vectorial form. Visualising GRF in three dimensions respects this three-dimensional structure, enabling more accurate depiction of the evolving vector. 
 
@@ -46,14 +46,14 @@ Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offer
 •	Static 3D Plot
 	The static plot generates dual orthographic projections (e.g., frontal and sagittal views) with optional 3D shadowing on anatomical planes, which is commonly used for most atheltic tasks (i.e. sprinting, jumping, decelerating, etc). These planar projections facilitate side-by-side comparison and allow users to examine differences between trials. This view supports static 3D analysis and figure export while preserving spatial relationships between components. These figure are suitable for publications.
 	
-	•	2D Plot (Cartesian Coordinate)
+•	2D Plot (Cartesian Coordinate)
 	This tab shows conventional time-series plots of Fx, Fy, Fz, and the resultant vector across stance (i.e. time). Users can toggle between trial-level and mean ± SD visualisations, highlight peak values, and customize which components are displayed.
 	
-	•	2D Plot (Polar Coordinate)
+•	2D Plot (Polar Coordinate)
 	Force vectors are transformed into polar coordinates, decomposing each time point into magnitude (r), inclination (θ), and azimuth (φ), with optional angle display in degrees. This representation allows users to disentangle directional and magnitude changes, helping to reveal rotational strategies or orientation shifts that Cartesian time-series can obscure. It also facilitates intuitive reasoning about vector directionality.
 	
-	•	Pedotti Plot
-	This plot maps any two selected GRF components (e.g., Fy vs. Fz) as time-evolving vectors from the origin, creating a continuous 2D vector field over stance [@Pedotti1977]. Animated and static options are available, with time encoded via color progression. Originally developed to visualise neuromotor control strategies, Pedotti plots are valuable for identifying coordination patterns, symmetry, and variability in multidimensional force application.
+•	Pedotti Plot
+	This plot maps any two selected GRF components (e.g., Fy vs. Fz) as time-evolving vectors from the origin, creating a continuous 2D vector field over stance [@Pedotti_1977]. Animated and static options are available, with time encoded via color progression. Originally developed to visualise neuromotor control strategies, Pedotti plots are valuable for identifying coordination patterns, symmetry, and variability in multidimensional force application.
 	
 	
 #Data Upload
