@@ -48,7 +48,7 @@ Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offer
 	The static plot generates dual orthographic projections (e.g., frontal and sagittal views) with optional 3D shadowing on anatomical planes, which is commonly used for most atheltic tasks (i.e. sprinting, jumping, decelerating, etc). These planar projections facilitate side-by-side comparison and allow users to examine differences between trials. This view supports static 3D analysis and figure export while preserving spatial relationships between components. These figure are suitable for publications.
 	
 •	2D Plot (Cartesian Coordinate)
-	This tab shows conventional time-series plots of Fx, Fy, Fz, and the resultant vector across stance (i.e. time). Users can toggle between trial-level and mean ± SD visualisations, highlight peak values, and customize which components are displayed.
+	This tab shows conventional time-series plots of Fx, Fy, Fz, and the resultant vector across stance (i.e. time). Users can toggle between trial-level and mean ± SD visualisations, highlight peak values, and customise which components are displayed.
 	
 •	2D Plot (Polar Coordinate)
 	Force vectors are transformed into polar coordinates, decomposing each time point into magnitude (r), inclination (θ), and azimuth (φ), with optional angle display in degrees. This representation allows users to disentangle directional and magnitude changes, helping to reveal rotational strategies or orientation shifts that Cartesian time-series can obscure. It also facilitates intuitive reasoning about vector directionality.
