@@ -63,8 +63,9 @@ Unlike traditional two-dimensional static plotting scripts, `shinyForce3D` offer
 When multiple trials are included, `shinyForce3D` automatically segments the data by triplets of columns and computes the trial-wise mean and standart deviation for visualisation. No specific column names are required, as the app infers structure based on column order.
 
 To ensure smooth parsing:
-• Do not include subject IDs, time stamps, or non-numeric rows.
-• Ensure the total number of columns is divisible by three.
-• Confirm that all rows are complete (no missing data in the middle of triplets).
+
+- Do not include subject IDs, time stamps, or non-numeric rows.
+- Ensure the total number of columns is divisible by three.
+- Confirm that all rows are complete (no missing data in the middle of triplets).
 
 # References
