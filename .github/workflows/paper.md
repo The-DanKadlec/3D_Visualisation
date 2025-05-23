@@ -29,7 +29,7 @@ csl: joss.csl
 
 Users can upload CSV files with trial-level force data, overlay multiple data sets for comparative analysis (e.g., between-limb, between-day, or between-cohort visualisations), and export publication-quality figures and animations in common formats such as `.csv` and `.gif`.
 
-In addition to its research applications, `shinyForce3D` is designed as a pedagogical tool for use in biomechanics and motor control education. By visualising how GRF vectors evolve over time and across conditions, students can develop a more intuitive understanding of ground reaction forces during athletic tasks than is typically afforded by traditional 2D plots.
+In addition to its research applications, `shinyForce3D` is designed as a pedagogical tool for use in kinesiology, biomechanics and motor control education. By visualising how GRF vectors evolve over time and across conditions, students can develop a more intuitive understanding of ground reaction forces during athletic tasks than is typically afforded by traditional 2D plots.
 
 
 # Statement of Need
